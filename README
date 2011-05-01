@@ -1,0 +1,8 @@
+Andrew Yee
+Entry points for CodeChallenge:
+
+challenge problem1:
+	node ./challenge1/sanitize_string.js
+
+challenge problem2:
+	nde ./challenge2/problem2.js
