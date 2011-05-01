@@ -6,10 +6,10 @@ try
 	
 	// Sample hardcoded variable use for testing
 	//   var stringToClean = "SELECT lastname, firstname " 
-			        + "FROM employee, location "
+	/*		        + "FROM employee, location "
 				+ "WHERE employees.planet = locations.planet"
 				+ "AND locations.location  = '''MARS';"
-				 
+	*/			 
 
 	// Cleaning the string by executing mysql_real_escape_string function 
 	var sanitizedString = MySQLRealEscapeStringModule.mysql_real_escape_string(stringToClean);
