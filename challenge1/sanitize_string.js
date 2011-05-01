@@ -2,8 +2,14 @@ var MySQLRealEscapeStringModule = require('./node_modules/mysql_real_escape_stri
 try
 {
 	// Getting user input from commandline 
-	var stringToClean = process.argv[2];
+	   var stringToClean = process.argv[2];
 	
+	// Sample  hardcode link use for testing
+	/*   var stringToClean = "SELECT lastname, firstname " 
+			        + "FROM employee, location "
+				+ "WHERE location ='MARS';"
+	*/			 
+
 	// Cleaning the string by executing mysql_real_escape_string function 
 	var sanitizedString = MySQLRealEscapeStringModule.mysql_real_escape_string(stringToClean);
 	
