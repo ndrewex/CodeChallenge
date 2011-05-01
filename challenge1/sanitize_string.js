@@ -4,18 +4,19 @@ try
 	// Getting user input from commandline 
 	   var stringToClean = process.argv[2];
 	
-	// Sample  hardcode link use for testing
-	/*   var stringToClean = "SELECT lastname, firstname " 
+	// Sample hardcoded variable use for testing
+	//   var stringToClean = "SELECT lastname, firstname " 
 			        + "FROM employee, location "
-				+ "WHERE location ='MARS';"
-	*/			 
+				+ "WHERE employees.planet = locations.planet"
+				+ "AND locations.location  = '''MARS';"
+				 
 
 	// Cleaning the string by executing mysql_real_escape_string function 
 	var sanitizedString = MySQLRealEscapeStringModule.mysql_real_escape_string(stringToClean);
 	
 	if(sanitizedString.length != 0)
 	{	
-		console.log('Here is the unsanitize string: ' + stringToClean);
+		console.log('Here is the unsanitize string: ' + stringToClean + "\n");
 		console.log('Here is the sanitized string: ' + sanitizedString);
 	}  
 }
