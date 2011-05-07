@@ -5,4 +5,7 @@ challenge problem1:
 	node ./challenge1/sanitize_string.js
 
 challenge problem2:
-	nde ./challenge2/problem2.js
+	node ./challenge2/problem2.js
+
+challenge problem3:
+	node ./challenge3/problem2/code_search.js
