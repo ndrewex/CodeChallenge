@@ -7,7 +7,7 @@ try
 	// Sample hardcoded variable use for testing
 	// var stringToClean = "ABC123ABC123ABC123ABC123ABC123ABC123";
 
-	if(isNaN(stringToClean))
+	if(stringToClean.length != 0)
 	{	
 	    // Cleaning the string by executing mysql_real_escape_string function
             var sanitizedString = MyFunctionModule.myFunction(stringToClean);
