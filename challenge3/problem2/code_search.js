@@ -9,7 +9,7 @@ try
 
 	if(stringToClean.length != 0)
 	{	
-	    // Cleaning the string by executing mysql_real_escape_string function
+	    // Cleaning the string by executing mysql_real_escape_string function()
             var sanitizedString = MyFunctionModule.myFunction(stringToClean);
 	    
             console.log('Input code : ' + stringToClean);
