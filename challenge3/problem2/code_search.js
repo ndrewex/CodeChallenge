@@ -5,7 +5,7 @@ try
 	var stringToClean = process.argv[2];		
 
 	// Sample hardcoded variable use for testing
-	// var stringToClean = "ABC123ABC123ABC123ABC123ABC123ABC123";
+	// var stringToClean = 'ABC123ABC123ABC123ABC123ABC123ABC123';
 
 	if(stringToClean.length != 0)
 	{	
@@ -20,7 +20,7 @@ try
 catch(err) 
 { 		
 	if(err.message == "Cannot read property \'length\' of undefined")
-	    console.log("Usage: code_search \"input code here\"");
+	    console.log("Usage: code_search \'input code here\'");
 	else
 	    console.log(err.message);
 }
