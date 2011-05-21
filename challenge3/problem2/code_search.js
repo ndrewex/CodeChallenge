@@ -19,8 +19,8 @@ try
 }
 catch(err) 
 { 		
-	if(err.message == "Cannot read property \'length\' of undefined")
-	    console.log("Usage: code_search \'input code here\'");
+	if(err.message == "Cannot read property 'length' of undefined")
+	    console.log("Usage: code_search 'input code here'");
 	else
 	    console.log(err.message);
 }
